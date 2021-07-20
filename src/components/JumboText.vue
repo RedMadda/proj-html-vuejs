@@ -1,64 +1,99 @@
 <template>
-    <section class="jumbo, container">
-        <div class="row row-col-4 my-5">
-            <span class="mt-5">Certified fitness professionals</span>
-            <h1>Take control of your health</h1>
-            <img src="../assets/img/yelloWave.png" alt="single wave icon">
-            <p> Curabitur ipsum dolor sit amet consec adipisi elit rerum sic amet. </p>
-            <div class="wrapper-btn">
-                <button class="tubeBtn rounded-pill font-weight-bold my-3"><i class="bi bi-youtube"></i>&nbsp; Visit my YouTube channel</button>
-                <button class="buyBtn rounded-pill ms-3">Buy Avada today  <i class="bi bi-arrow-right-short"></i></button>
-            </div>
-       </div>
-    </section>
-    
+  <section class="jumbo, container">
+    <div class="row">
+      <!-- text -->
+      <span class="mt-5 pt-5">{{ details.text1 }}</span>
+      <h1>{{ details.h1 }}</h1>
+      <!-- imgs -->
+      <div class="img-wrapper">
+        <img src="@/assets/img/yelloWave.png" alt="single wave icon" />
+        <i class="iPlay bi bi-caret-right-fill"></i>
+      </div>
+      <!-- text -->
+      <p>{{ details.text2 }}</p>
+      <!-- buttons -->
+      <div class="wrapper-btn">
+        <button class="tubeBtn rounded-pill font-weight-bold my-3">
+          <i class="bi bi-youtube"></i>&nbsp;
+          {{ details.btnTubeText }}
+        </button>
+        <button class="buyBtn rounded-pill ms-3">
+          {{ details.btnBuyText }}
+          <i class="bi bi-arrow-right-short"></i>
+        </button>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
-
 export default {
-    name: "JumboText"
-}
+  name: "JumboText",
+  props: ["details"],
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../style/mixins.scss";
 
-.container{
-    flex-direction: column;
-    align-content: flex-start;
-    color:white;
+.container {
+  flex-direction: column;
+  align-content: flex-start;
+  color: white;
 
-    span{
-        color: #CD353D;
-        font-weight: 500;
-        font-size: 1.9rem;
+  span {
+    color: #cd353d;
+    font-weight: 500;
+    font-size: 1.9rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  img {
+    height: 50px;
+    width: 200px;
+  }
+
+  .iPlay {
+    font-size: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 20%;
+    color: blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .tubeBtn {
+    @include btn(15px 35px, none);
+
+    &:hover {
+      @include btn(15px 35px, none, #ff414b, white);
+    }
+  }
+
+  .buyBtn {
+    @include btn(15px 35px, 2px solid rgb(75, 73, 78), black);
+
+    i.bi {
+      font-size: 1.5rem;
+      position: absolute;
+      line-height: 0;
     }
 
-    h1{
-        font-size: 4rem;
+    &:hover {
+      @include btn(15px 35px, none, white, black);
     }
-    img{
-        height:50px;
-        width:200px;
-    }
-    p{
-        font-size:1.4rem;
-    }
-
-    .tubeBtn{
-        @include btn(15px 35px, none);
-    }
-
-    .buyBtn{
-      @include btn(15px 35px, 2px solid rgb(75, 73, 78), black);
-
-      i{
-        font-size: 1.5rem;
-        position: absolute;
-        line-height: 0;
-        }
-    }
+  }
 }
-
 </style>
