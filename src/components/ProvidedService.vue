@@ -2,8 +2,8 @@
   <section class="Service">
     <div class="centWrap container position-absolute">
       <div class="row justify-content-evenly">
-        <ServiceCard v-for="(el, i) in servCardData"  :key="i" :details="el" />
-       </div>
+        <ServiceCard v-for="(el, i) in servCardData" :key="i" :details="el" />
+      </div>
     </div>
   </section>
 </template>
@@ -27,10 +27,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-.centWrap{
-  left:50%;
+.centWrap {
+  left: 50%;
   transform: translateX(-50%);
 }
-
 </style>

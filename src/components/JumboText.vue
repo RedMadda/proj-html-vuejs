@@ -57,10 +57,10 @@ export default {
   }
 
   .iPlay {
-   @include playBtn();
-   position: absolute;
-   right: 22%;
-   top:45%;
+    @include playBtn();
+    position: absolute;
+    right: 22%;
+    top: 45%;
   }
 
   .tubeBtn {
