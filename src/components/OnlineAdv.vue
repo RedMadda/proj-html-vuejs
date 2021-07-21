@@ -48,6 +48,7 @@ export default {
         background-size: 100%;
         top:-50px;
         border-radius: 5px;
+        border-bottom-right-radius: 5%;
         background-size: cover;
         background-repeat: no-repeat;
 

@@ -7,6 +7,9 @@
       <Inspirational />
       <!-- online advice -->
       <OnlineAdv />
+      <!-- featured videos -->
+      <Playlists />
+
 
     </div>
  
@@ -16,13 +19,16 @@
 import ProvidedService from "../components/ProvidedService.vue";
 import Inspirational from "../components/Inspirational.vue"
 import OnlineAdv from "../components/OnlineAdv.vue"
+import Playlists from "../components/Playlists.vue"
+
 
 export default {
   name: "Main",
   components: {
     ProvidedService,
     Inspirational,
-    OnlineAdv
+    OnlineAdv,
+    Playlists
   },
 };
 </script>

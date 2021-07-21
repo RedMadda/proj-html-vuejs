@@ -14,14 +14,15 @@
 }
   
 // play byn
-@mixin playBtn(){
-    font-size: 1rem;
-    padding: 1.5rem;
+@mixin playBtn($fSize:1rem, $pad:1.5rem){
+    font-size: $fSize;
+    padding: $pad;
     background-color: white;
     border-radius: 50%;
     color: blue;
 
     &:hover {
       cursor: pointer;
+      color:red;
     }
   }
