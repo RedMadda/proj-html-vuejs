@@ -32,6 +32,10 @@ export default {
     left: 45%;
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
 p{
     color: #4154FF;
     font-weight: 500;

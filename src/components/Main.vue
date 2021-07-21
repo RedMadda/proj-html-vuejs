@@ -9,6 +9,8 @@
       <OnlineAdv />
       <!-- featured videos -->
       <Playlists />
+      <!-- subscribe with email -->
+      <SubsEmail />
 
 
     </div>
@@ -20,6 +22,8 @@ import ProvidedService from "../components/ProvidedService.vue";
 import Inspirational from "../components/Inspirational.vue"
 import OnlineAdv from "../components/OnlineAdv.vue"
 import Playlists from "../components/Playlists.vue"
+import SubsEmail from "../components/SubsEmail.vue"
+
 
 
 export default {
@@ -28,7 +32,8 @@ export default {
     ProvidedService,
     Inspirational,
     OnlineAdv,
-    Playlists
+    Playlists,
+    SubsEmail
   },
 };
 </script>
