@@ -29,6 +29,7 @@ export default {
 .cardWrap{
     top: -80px;
 }
+
 .darkWrap{
   filter: brightness(50%);
 
@@ -50,6 +51,7 @@ export default {
     width:3rem;
     height:2rem;
     top:-30px;
+    
 }
 
 h3{
@@ -61,9 +63,5 @@ p{
     color:yellow;
     font-size: 1.4rem;
 }
-
-
-
-
 
 </style>
