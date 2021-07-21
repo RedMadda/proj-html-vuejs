@@ -1,5 +1,5 @@
 <template>
-  <section class="servAgain py-5"> 
+  <section class="servAgain py-5">
     <div class="container pt-5">
       <div class="row justify-content-evenly">
         <AgainServCard v-for="(el, i) in content" :key="i" :det="el" />
@@ -27,7 +27,7 @@ export default {
 <style lang="scss" scoped>
 .servAgain {
   height: 89vh;
-  width:100%;
+  width: 100%;
   background-color: black;
   color: white;
 }

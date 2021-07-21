@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "PlayCard",
+  name: "ArticlCard",
   props: {
     det: Object,
   },

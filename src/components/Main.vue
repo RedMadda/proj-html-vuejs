@@ -12,6 +12,8 @@
     <SubsEmail />
     <!-- other section about available services -->
     <AgainServices />
+    <!-- articles -->
+    <Articles />
   </div>
 </template>
 
@@ -22,6 +24,7 @@ import OnlineAdv from "../components/OnlineAdv.vue";
 import Playlists from "../components/Playlists.vue";
 import SubsEmail from "../components/SubsEmail.vue";
 import AgainServices from "../components/AgainServices.vue";
+import Articles from "../components/Articles.vue";
 
 export default {
   name: "Main",
@@ -32,6 +35,7 @@ export default {
     Playlists,
     SubsEmail,
     AgainServices,
+    Articles,
   },
 };
 </script>
