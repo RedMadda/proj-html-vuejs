@@ -57,21 +57,10 @@ export default {
   }
 
   .iPlay {
-    font-size: 1rem;
-    padding: 1.5rem;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    right: 20%;
-    color: blue;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  p {
-    font-size: 1.4rem;
+   @include playBtn();
+   position: absolute;
+   right: 22%;
+   top:45%;
   }
 
   .tubeBtn {

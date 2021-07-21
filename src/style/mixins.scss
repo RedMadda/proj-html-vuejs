@@ -12,3 +12,16 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+  
+// play byn
+@mixin playBtn(){
+    font-size: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 50%;
+    color: blue;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
